@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f8f8fc;
+  --foreground: #14121f;
+  --foreground-muted: #5b5670;
+  --border: #e7e5f0;
+  --brand-blue: #0d9488;
+  --brand-purple: #16a34a;
+  --brand-blue-light: #14b8a6;
+  --brand-purple-light: #22c55e;
+}
+
+.dark {
+  --background: #081312;
+  --surface: #0e1a19;
+  --surface-muted: #122220;
+  --foreground: #f0faf7;
+  --foreground-muted: #9cb8b2;
+  --border: #1e3532;
+  --brand-blue: #2dd4bf;
+  --brand-purple: #4ade80;
+  --brand-blue-light: #5eead4;
+  --brand-purple-light: #86efac;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-blue-light: var(--brand-blue-light);
+  --color-brand-purple-light: var(--brand-purple-light);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(90deg, var(--brand-blue), var(--brand-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-gradient-bg {
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
+}
+
+.hero-glow {
+  background:
+    radial-gradient(45% 55% at 15% 20%, color-mix(in srgb, var(--brand-blue) 18%, transparent), transparent 70%),
+    radial-gradient(40% 50% at 85% 15%, color-mix(in srgb, var(--brand-purple) 18%, transparent), transparent 70%);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  scrollbar-width: none;
+}
