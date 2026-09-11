@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TrendingUp } from "lucide-react";
+import { Flame, TrendingUp } from "lucide-react";
 import type { Software } from "@/lib/types";
 import { RatingStars } from "./RatingStars";
 
@@ -7,7 +7,11 @@ export function SoftwareCard({ sw }: { sw: Software }) {
   return (
     <Link
       href={`/software/${sw.slug}`}
-      className="group flex flex-col rounded-2xl border border-border bg-surface p-5 transition hover:-translate-y-0.5 hover:border-brand-blue/40 hover:shadow-lg"
+      className={`group flex flex-col rounded-2xl border bg-surface p-5 transition hover:-translate-y-0.5 hover:shadow-lg ${
+        sw.spotlight
+          ? "border-brand-purple/40 ring-1 ring-brand-purple/15 hover:border-brand-purple/60"
+          : "border-border hover:border-brand-blue/40"
+      }`}
     >
       <div className="flex items-start justify-between">
         <span
@@ -15,11 +19,18 @@ export function SoftwareCard({ sw }: { sw: Software }) {
         >
           {sw.logoInitial}
         </span>
-        {sw.trending && (
-          <span className="flex items-center gap-1 rounded-full bg-brand-purple/10 px-2 py-1 text-[11px] font-medium text-brand-purple">
-            <TrendingUp size={11} />
-            Trending
+        {sw.spotlight ? (
+          <span className="flex items-center gap-1 rounded-full brand-gradient-bg px-2 py-1 text-[11px] font-medium text-white">
+            <Flame size={11} />
+            Most Talked About
           </span>
+        ) : (
+          sw.trending && (
+            <span className="flex items-center gap-1 rounded-full bg-brand-purple/10 px-2 py-1 text-[11px] font-medium text-brand-purple">
+              <TrendingUp size={11} />
+              Trending
+            </span>
+          )
         )}
       </div>
 

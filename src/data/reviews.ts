@@ -2,6 +2,12 @@ import type { Review } from "@/lib/types";
 
 export const reviews: Review[] = [
   {
+    id: "rev-17", softwareId: "sw-freshbooks", authorName: "Priya Malhotra", authorRole: "Studio Founder", authorCompanySize: "1-10",
+    rating: 5, title: "Everyone on our team recommends this now", date: "2026-09-10", verified: true, helpfulCount: 19,
+    body: "It feels like every freelancer group chat I'm in has someone bringing up FreshBooks this quarter. We moved our whole studio over and the client portal alone has cut our payment delays in half.",
+    pros: "Word-of-mouth is real — it just works out of the box.", cons: "Wish the Lite plan allowed a few more clients before upgrading.",
+  },
+  {
     id: "rev-1", softwareId: "sw-hubspot", authorName: "Priya Nair", authorRole: "Marketing Manager", authorCompanySize: "11-50",
     rating: 5, title: "Finally, one place for the whole funnel", date: "2026-07-14", verified: true, helpfulCount: 42,
     body: "We switched from three separate tools to HubSpot's free CRM plus Marketing Starter and haven't looked back. Seeing email opens, deal stage, and support tickets on one contact record changed how our sales and marketing teams talk to each other.",

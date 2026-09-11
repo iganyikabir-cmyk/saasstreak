@@ -81,6 +81,7 @@ export interface Software {
   bestFor: string;
   trending: boolean;
   featured: boolean;
+  spotlight?: boolean;
 }
 
 export interface ComparisonRow {

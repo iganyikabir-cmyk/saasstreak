@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { ArrowRight, Sparkles, ShieldCheck, Zap, Users2 } from "lucide-react";
+import { ArrowRight, Flame, Sparkles, ShieldCheck, Zap, Users2 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryCard } from "@/components/CategoryCard";
 import { SoftwareCard } from "@/components/SoftwareCard";
 import { ReviewCard } from "@/components/ReviewCard";
+import { RatingStars } from "@/components/RatingStars";
 import { SectionHeading } from "@/components/SectionHeading";
 import { NewsletterForm } from "@/components/NewsletterForm";
-import { RatingStars } from "@/components/RatingStars";
 import {
   categories,
+  software,
   getTrendingSoftware,
   getLatestReviews,
   comparisons,
@@ -26,6 +27,7 @@ const stats = [
 export default function HomePage() {
   const trending = getTrendingSoftware();
   const latestReviews = getLatestReviews(3);
+  const spotlight = software.find((s) => s.spotlight);
 
   return (
     <div>
@@ -74,6 +76,50 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+
+      {/* Spotlight — most talked about software */}
+      {spotlight && (
+        <section className="py-14 sm:py-16">
+          <Container>
+            <div className="flex flex-col gap-6 rounded-3xl border border-brand-purple/20 bg-gradient-to-br from-brand-blue/5 to-brand-purple/5 p-6 sm:flex-row sm:items-center sm:p-8">
+              <div className="flex items-center gap-4 sm:shrink-0">
+                <span
+                  className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${spotlight.logoColor} text-xl font-bold text-white`}
+                >
+                  {spotlight.logoInitial}
+                </span>
+              </div>
+              <div className="flex-1">
+                <span className="flex w-fit items-center gap-1.5 rounded-full brand-gradient-bg px-3 py-1 text-xs font-medium text-white">
+                  <Flame size={13} />
+                  Most Talked About This Month
+                </span>
+                <h2 className="mt-3 text-xl font-semibold text-foreground sm:text-2xl">
+                  {spotlight.name}
+                  <span className="ml-2 text-base font-normal text-foreground-muted">
+                    — {spotlight.tagline}
+                  </span>
+                </h2>
+                <div className="mt-2 flex flex-wrap items-center gap-3">
+                  <RatingStars rating={spotlight.ratings.overall} size={14} />
+                  <span className="text-xs text-foreground-muted">
+                    {spotlight.ratings.reviewCount.toLocaleString()} reviews
+                  </span>
+                  <span className="text-xs text-foreground-muted">·</span>
+                  <span className="text-xs text-foreground-muted">From {spotlight.startingPrice}</span>
+                </div>
+              </div>
+              <Link
+                href={`/software/${spotlight.slug}`}
+                className="flex shrink-0 items-center justify-center gap-1.5 rounded-xl brand-gradient-bg px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+              >
+                Read the full review
+                <ArrowRight size={15} />
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Featured categories */}
       <section className="py-16 sm:py-20">
