@@ -72,8 +72,8 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-sm text-foreground-muted sm:flex-row">
           <p>© {new Date().getFullYear()} SaaSStreak. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-brand-blue">Privacy Policy</Link>
-            <Link href="#" className="hover:text-brand-blue">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-brand-blue">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-brand-blue">Terms of Service</Link>
           </div>
         </div>
       </div>
