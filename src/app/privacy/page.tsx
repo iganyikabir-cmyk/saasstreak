@@ -143,8 +143,8 @@ const sections: LegalSectionData[] = [
     body: (
       <p>
         Questions about this policy? Email{" "}
-        <a href="mailto:hello@saasstreak.com" className="text-brand-blue hover:underline">
-          hello@saasstreak.com
+        <a href="mailto:hello@saastreak.com" className="text-brand-blue hover:underline">
+          hello@saastreak.com
         </a>{" "}
         (Monday to Friday, 9 AM – 6 PM GMT).
       </p>
