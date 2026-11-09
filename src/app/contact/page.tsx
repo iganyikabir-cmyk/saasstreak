@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Contact Us",
   description:
-    "Get in touch with SaaSStreak — questions, feedback, or suggestions for SaaS products to review. We'd love to hear from you.",
+    "Get in touch with SaaStreak — questions, feedback, or suggestions for SaaS products to review. We'd love to hear from you.",
   path: "/contact",
 });
 
@@ -65,11 +65,11 @@ export default function ContactPage() {
         className="mt-6 flex h-11 w-fit items-center gap-1.5 rounded-xl brand-gradient-bg px-5 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
       >
         <Mail size={15} />
-        Email SaaSStreak
+        Email SaaStreak
       </a>
 
       <p className="mt-10 text-sm text-foreground-muted">
-        Thank you for connecting with SaaSStreak!
+        Thank you for connecting with SaaStreak!
       </p>
     </Container>
   );

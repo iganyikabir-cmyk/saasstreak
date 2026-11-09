@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Terms of Service",
   description:
-    "The terms that govern your use of SaaSStreak, including rules for reviews, acceptable use, third-party links, and liability.",
+    "The terms that govern your use of SaaStreak, including rules for reviews, acceptable use, third-party links, and liability.",
   path: "/terms",
 });
 
@@ -15,7 +15,7 @@ const sections: LegalSectionData[] = [
     heading: "Acceptance of Terms",
     body: (
       <p>
-        By accessing or using SaaSStreak (the &ldquo;Site&rdquo;), you agree to be bound by
+        By accessing or using SaaStreak (the &ldquo;Site&rdquo;), you agree to be bound by
         these Terms of Service and our{" "}
         <Link href="/privacy" className="text-brand-blue hover:underline">
           Privacy Policy
@@ -25,10 +25,10 @@ const sections: LegalSectionData[] = [
     ),
   },
   {
-    heading: "What SaaSStreak Provides",
+    heading: "What SaaStreak Provides",
     body: (
       <p>
-        SaaSStreak is an informational platform offering software reviews, ratings, pricing
+        SaaStreak is an informational platform offering software reviews, ratings, pricing
         summaries, side-by-side comparisons, buying guides, and AI-assisted recommendations.
         Our content is provided to help you research software and is not professional,
         financial, legal, or purchasing advice.
@@ -61,7 +61,7 @@ const sections: LegalSectionData[] = [
           <li>Does not infringe anyone&rsquo;s rights or contain confidential or unlawful material.</li>
         </ul>
         <p>
-          You keep ownership of your content, but you grant SaaSStreak a non-exclusive,
+          You keep ownership of your content, but you grant SaaStreak a non-exclusive,
           worldwide, royalty-free license to display, reproduce, and distribute it on the Site
           and in related promotion. We may moderate, edit for formatting, decline, or remove
           any submission at our discretion.
@@ -91,7 +91,7 @@ const sections: LegalSectionData[] = [
         The Site links to third-party vendor websites. We do not control and are not
         responsible for their content, products, or practices, and any dealings you have with
         a vendor are solely between you and that vendor. Some links may be affiliate links,
-        meaning SaaSStreak may earn a commission if you purchase through them, at no extra
+        meaning SaaStreak may earn a commission if you purchase through them, at no extra
         cost to you. Commercial relationships do not buy better ratings or rankings.
       </p>
     ),
@@ -101,7 +101,7 @@ const sections: LegalSectionData[] = [
     body: (
       <p>
         The Site&rsquo;s design, text, graphics, logo, and compilation of content are owned by
-        SaaSStreak or its licensors and protected by intellectual property laws. Product names
+        SaaStreak or its licensors and protected by intellectual property laws. Product names
         and logos belong to their respective owners. You may view and share links to Site
         content for personal, non-commercial use, but may not otherwise reproduce or
         distribute it without our written permission.
@@ -123,7 +123,7 @@ const sections: LegalSectionData[] = [
     heading: "Limitation of Liability",
     body: (
       <p>
-        To the fullest extent permitted by law, SaaSStreak and its owners, contributors, and
+        To the fullest extent permitted by law, SaaStreak and its owners, contributors, and
         partners are not liable for any indirect, incidental, special, consequential, or
         punitive damages, or for any loss of profits, data, or business, arising from your use
         of or reliance on the Site or any software you choose based on it.
@@ -174,7 +174,7 @@ export default function TermsPage() {
       title="Terms of Service"
       path="/terms"
       lastUpdated="October 6, 2026"
-      intro="Welcome to SaaSStreak. These Terms of Service set out the rules for using our website, so please read them carefully."
+      intro="Welcome to SaaStreak. These Terms of Service set out the rules for using our website, so please read them carefully."
       sections={sections}
     />
   );

@@ -229,7 +229,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Why SaaSStreak */}
+      {/* Why SaaStreak */}
       <section className="py-16 sm:py-20">
         <Container>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">

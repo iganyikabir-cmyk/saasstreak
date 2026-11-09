@@ -125,7 +125,7 @@ export function AIRecommenderWidget() {
           <div className="flex h-full min-h-[280px] flex-col items-center justify-center rounded-2xl border border-dashed border-border p-8 text-center">
             <Sparkles size={28} className="text-brand-blue" />
             <p className="mt-3 max-w-xs text-sm text-foreground-muted">
-              Answer a few questions and SaaSStreak&rsquo;s recommendation engine will
+              Answer a few questions and SaaStreak&rsquo;s recommendation engine will
               rank the best-fit software for your team.
             </p>
           </div>

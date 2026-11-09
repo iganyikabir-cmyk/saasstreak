@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Software Categories",
   description:
-    "Browse every software category on SaaSStreak — CRM, marketing, project management, AI tools, and more. Compare top-rated products in each category.",
+    "Browse every software category on SaaStreak — CRM, marketing, project management, AI tools, and more. Compare top-rated products in each category.",
   path: "/categories",
 });
 

@@ -22,7 +22,7 @@ export default function BlogIndexPage() {
     <Container className="py-10">
       <Breadcrumbs items={[{ name: "Blog", href: "/blog" }]} />
       <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-        SaaSStreak Blog
+        SaaStreak Blog
       </h1>
       <p className="mt-2 max-w-2xl text-foreground-muted">
         Buying guides, software comparisons, and industry trends to help you

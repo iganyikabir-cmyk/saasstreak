@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "AI Software Recommendation Engine",
   description:
-    "Answer a few questions and get personalized software recommendations for your business, ranked and explained by SaaSStreak's AI matching engine.",
+    "Answer a few questions and get personalized software recommendations for your business, ranked and explained by SaaStreak's AI matching engine.",
   path: "/ai-recommender",
 });
 

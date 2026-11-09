@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Browse All Software",
   description:
-    "Browse and search every software product on SaaSStreak, with verified reviews, pricing, and ratings across every category.",
+    "Browse and search every software product on SaaStreak, with verified reviews, pricing, and ratings across every category.",
   path: "/software",
 });
 

@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription:
       "Compare the best CRM software for small businesses in 2026, including HubSpot, Salesforce, and alternatives. Pricing, features, and honest recommendations.",
     category: "CRM Software",
-    authorName: "SaaSStreak Editorial",
+    authorName: "SaaStreak Editorial",
     publishedAt: "2026-08-20",
     updatedAt: "2026-08-20",
     readMinutes: 9,
@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription:
       "Discover the best AI tools for startups in 2026 across writing, coding, design, and customer support, with pricing and honest use-case guidance.",
     category: "AI Tools",
-    authorName: "SaaSStreak Editorial",
+    authorName: "SaaStreak Editorial",
     publishedAt: "2026-08-05",
     updatedAt: "2026-08-15",
     readMinutes: 8,
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription:
       "Compare the best project management software of 2026, including Notion and ClickUp. Find the right tool for your team size and workflow complexity.",
     category: "Project Management Software",
-    authorName: "SaaSStreak Editorial",
+    authorName: "SaaStreak Editorial",
     publishedAt: "2026-07-18",
     updatedAt: "2026-07-18",
     readMinutes: 10,
@@ -58,20 +58,20 @@ export const blogPosts: BlogPost[] = [
   {
     id: "post-software-buying-guide",
     slug: "software-buying-guide-how-to-evaluate-saas",
-    title: "The SaaSStreak Software Buying Guide: How to Evaluate Any Tool",
+    title: "The SaaStreak Software Buying Guide: How to Evaluate Any Tool",
     excerpt:
       "A repeatable framework for evaluating SaaS purchases so you stop relying on vendor demos and star ratings alone.",
     seoDescription:
       "Learn how to evaluate and buy SaaS software with a repeatable framework covering trials, total cost of ownership, and red flags to watch for.",
     category: "Software Buying Guides",
-    authorName: "SaaSStreak Editorial",
+    authorName: "SaaStreak Editorial",
     publishedAt: "2026-06-30",
     updatedAt: "2026-06-30",
     readMinutes: 7,
     coverGradient: "from-sky-500 to-blue-500",
     relatedSoftwareIds: [],
     content:
-      "Buying software well is a skill, not luck. Here's the framework we use to evaluate every product on SaaSStreak.\n\n## 1. Define the job, not the feature list\nWrite down the specific outcome you need before you look at any vendor site. Feature checklists lead you toward the most feature-dense tool, not the right one.\n\n## 2. Calculate total cost of ownership\nList price is rarely the real price. Factor in per-seat scaling, required add-ons, implementation time, and training.\n\n## 3. Run a real trial, not a demo\nA sales demo shows you the best case. A trial with your actual data and workflow shows you the real one. Insist on the latter before signing an annual contract.\n\n## 4. Check the exit\nBefore you commit, understand how you'd get your data out and what the contract requires to cancel. This alone eliminates a surprising number of options.\n\n## 5. Read reviews from your company size\nA 5-star review from a 5,000-person enterprise tells you little about how a tool performs for a 10-person team, and vice versa — filter reviews by company size when you can.",
+      "Buying software well is a skill, not luck. Here's the framework we use to evaluate every product on SaaStreak.\n\n## 1. Define the job, not the feature list\nWrite down the specific outcome you need before you look at any vendor site. Feature checklists lead you toward the most feature-dense tool, not the right one.\n\n## 2. Calculate total cost of ownership\nList price is rarely the real price. Factor in per-seat scaling, required add-ons, implementation time, and training.\n\n## 3. Run a real trial, not a demo\nA sales demo shows you the best case. A trial with your actual data and workflow shows you the real one. Insist on the latter before signing an annual contract.\n\n## 4. Check the exit\nBefore you commit, understand how you'd get your data out and what the contract requires to cancel. This alone eliminates a surprising number of options.\n\n## 5. Read reviews from your company size\nA 5-star review from a 5,000-person enterprise tells you little about how a tool performs for a 10-person team, and vice versa — filter reviews by company size when you can.",
   },
   {
     id: "post-industry-trends-2026",
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription:
       "Explore the top SaaS industry trends of 2026, from AI-native pricing models to platform consolidation, and what they mean for software buyers.",
     category: "Industry Trends",
-    authorName: "SaaSStreak Editorial",
+    authorName: "SaaStreak Editorial",
     publishedAt: "2026-08-28",
     updatedAt: "2026-08-28",
     readMinutes: 6,

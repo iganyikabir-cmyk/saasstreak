@@ -1,4 +1,4 @@
-# SaaSStreak
+# SaaStreak
 
 A software review and comparison platform — discover, compare, and choose
 business software backed by verified reviews and an AI-powered

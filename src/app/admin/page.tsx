@@ -3,7 +3,7 @@ import { Container } from "@/components/Container";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 
 export const metadata: Metadata = {
-  title: "Admin — SaaSStreak",
+  title: "Admin — SaaStreak",
   robots: { index: false, follow: false },
 };
 

@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How SaaSStreak collects, uses, and protects your information when you browse reviews, subscribe to our newsletter, or contact us.",
+    "How SaaStreak collects, uses, and protects your information when you browse reviews, subscribe to our newsletter, or contact us.",
   path: "/privacy",
 });
 
@@ -14,7 +14,7 @@ const sections: LegalSectionData[] = [
     heading: "Information We Collect",
     body: (
       <>
-        <p>We collect only the information needed to run SaaSStreak:</p>
+        <p>We collect only the information needed to run SaaStreak:</p>
         <ul className="list-disc space-y-1 pl-5">
           <li>
             <strong className="text-foreground">Information you give us:</strong> your email
@@ -55,7 +55,7 @@ const sections: LegalSectionData[] = [
     body: (
       <p>
         Reviews you submit, including the display name, role, and company size you provide,
-        may be shown publicly on SaaSStreak. Please do not include confidential or sensitive
+        may be shown publicly on SaaStreak. Please do not include confidential or sensitive
         information in a review. To request removal or correction of a review you wrote,
         contact us at the address below.
       </p>
@@ -65,7 +65,7 @@ const sections: LegalSectionData[] = [
     heading: "Cookies and Similar Technologies",
     body: (
       <p>
-        SaaSStreak uses browser local storage for essential preferences such as your theme
+        SaaStreak uses browser local storage for essential preferences such as your theme
         selection. We do not use advertising cookies. If we add analytics tools in the
         future, we will update this policy and, where required, ask for your consent.
       </p>
@@ -88,7 +88,7 @@ const sections: LegalSectionData[] = [
           </li>
         </ul>
         <p>
-          When you click through to a vendor&rsquo;s website from a SaaSStreak listing, that
+          When you click through to a vendor&rsquo;s website from a SaaStreak listing, that
           vendor&rsquo;s own privacy policy applies to anything you share with them.
         </p>
       </>
@@ -122,7 +122,7 @@ const sections: LegalSectionData[] = [
     heading: "Children’s Privacy",
     body: (
       <p>
-        SaaSStreak is intended for business users and is not directed to children under 16.
+        SaaStreak is intended for business users and is not directed to children under 16.
         We do not knowingly collect personal information from children. If you believe a
         child has provided us information, please contact us and we will delete it.
       </p>
@@ -133,7 +133,7 @@ const sections: LegalSectionData[] = [
     body: (
       <p>
         We may update this Privacy Policy from time to time. When we do, we will revise the
-        &ldquo;Last updated&rdquo; date at the top of this page. Continued use of SaaSStreak
+        &ldquo;Last updated&rdquo; date at the top of this page. Continued use of SaaStreak
         after changes means you accept the updated policy.
       </p>
     ),
@@ -158,7 +158,7 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       path="/privacy"
       lastUpdated="October 6, 2026"
-      intro="Your privacy matters to us. This Privacy Policy explains what information SaaSStreak collects, how we use it, and the choices you have when you use our website."
+      intro="Your privacy matters to us. This Privacy Policy explains what information SaaStreak collects, how we use it, and the choices you have when you use our website."
       sections={sections}
     />
   );

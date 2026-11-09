@@ -15,9 +15,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About SaaSStreak",
+  title: "About SaaStreak",
   description:
-    "SaaSStreak helps businesses discover, compare, and choose the right software through verified reviews and AI-powered recommendations.",
+    "SaaStreak helps businesses discover, compare, and choose the right software through verified reviews and AI-powered recommendations.",
   path: "/about",
 });
 
@@ -47,10 +47,10 @@ export default function AboutPage() {
       <Breadcrumbs items={[{ name: "About", href: "/about" }]} />
 
       <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-        About SaaSStreak
+        About SaaStreak
       </h1>
       <p className="mt-4 max-w-2xl text-foreground-muted">
-        SaaSStreak is a software review and comparison platform built to help
+        SaaStreak is a software review and comparison platform built to help
         businesses cut through marketing noise and make confident software
         decisions. We combine verified user reviews, transparent pricing
         breakdowns, and an AI-powered recommendation engine to match buyers

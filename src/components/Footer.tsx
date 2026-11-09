@@ -30,7 +30,7 @@ const footerColumns = [
   {
     title: "Company",
     links: [
-      { label: "About SaaSStreak", href: "/about" },
+      { label: "About SaaStreak", href: "/about" },
       { label: "Contact Us", href: "/contact" },
       { label: "Admin dashboard", href: "/admin" },
     ],
@@ -70,7 +70,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-sm text-foreground-muted sm:flex-row">
-          <p>© {new Date().getFullYear()} SaaSStreak. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SaaStreak. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-brand-blue">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-brand-blue">Terms of Service</Link>

@@ -1,4 +1,4 @@
--- SaaSStreak — Supabase database schema
+-- SaaStreak — Supabase database schema
 -- Run against a fresh Supabase Postgres project (SQL Editor or `supabase db push`).
 -- This prototype ships with local seed data in src/data/*.ts; wiring src/data/*
 -- to these tables (via src/lib/supabase/client.ts) is a drop-in swap once a

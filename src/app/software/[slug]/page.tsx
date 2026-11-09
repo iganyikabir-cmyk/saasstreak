@@ -294,7 +294,7 @@ export default async function SoftwarePage({
             <div className="rounded-2xl border border-border bg-surface p-5">
               <h3 className="text-sm font-semibold text-foreground">Ready to try {sw.name}?</h3>
               <p className="mt-1.5 text-sm text-foreground-muted">
-                Starting at {sw.startingPrice}. No credit card details shared with SaaSStreak.
+                Starting at {sw.startingPrice}. No credit card details shared with SaaStreak.
               </p>
               <a
                 href={sw.website}
