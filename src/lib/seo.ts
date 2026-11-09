@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "SaaSStreak",
   tagline: "Discover the Best Software for Your Business",
-  url: "https://saasstreak.com",
+  url: "https://saastreak.com",
   description:
     "SaaSStreak is a software review and comparison platform helping businesses find, compare, and choose the right SaaS tools with verified reviews, pricing breakdowns, and AI-powered recommendations.",
 };
