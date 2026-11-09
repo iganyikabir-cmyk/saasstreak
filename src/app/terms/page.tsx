@@ -155,8 +155,8 @@ const sections: LegalSectionData[] = [
     body: (
       <p>
         Questions about these Terms? Email{" "}
-        <a href="mailto:iganyikabir@saastreak.com" className="text-brand-blue hover:underline">
-          iganyikabir@saastreak.com
+        <a href="mailto:hello@saastreak.com" className="text-brand-blue hover:underline">
+          hello@saastreak.com
         </a>{" "}
         or visit our{" "}
         <Link href="/contact" className="text-brand-blue hover:underline">
