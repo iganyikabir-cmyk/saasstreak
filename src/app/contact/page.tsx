@@ -37,10 +37,10 @@ export default function ContactPage() {
           <div>
             <p className="text-xs text-foreground-muted">Email</p>
             <a
-              href="mailto:hello@saastreak.com"
+              href="mailto:iganyikabir@saastreak.com"
               className="text-sm font-medium text-foreground hover:text-brand-blue"
             >
-              hello@saastreak.com
+              iganyikabir@saastreak.com
             </a>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
       </div>
 
       <a
-        href="mailto:hello@saastreak.com"
+        href="mailto:iganyikabir@saastreak.com"
         className="mt-6 flex h-11 w-fit items-center gap-1.5 rounded-xl brand-gradient-bg px-5 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
       >
         <Mail size={15} />
