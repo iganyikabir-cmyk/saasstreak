@@ -10,7 +10,6 @@ export interface Category {
   description: string;
   seoDescription: string;
   icon: string; // lucide-react icon name
-  productCount: number;
 }
 
 export interface PricingPlan {
@@ -53,7 +52,6 @@ export interface RatingBreakdown {
   features: number;
   customerSupport: number;
   valueForMoney: number;
-  reviewCount: number;
 }
 
 export interface Software {

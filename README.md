@@ -33,7 +33,8 @@ Open http://localhost:3000.
 - `/compare`, `/compare/[slug]`, curated comparisons (HubSpot vs Salesforce, Notion vs ClickUp, Zendesk vs Freshdesk) plus an "AI comparison assistant" widget for any two products
 - `/blog`, `/blog/[slug]`, SEO-optimized guides and articles
 - `/ai-recommender`, AI-powered recommendation wizard
-- `/admin`, CMS dashboard (drafts persist to `localStorage` in this prototype)
+- `/admin`, local-only CMS prototype. It has no authentication, so it returns a 404 unless `NEXT_PUBLIC_ENABLE_ADMIN=true` is set in `.env.local` (drafts persist to `localStorage`)
+- `/methodology`, `/affiliate-disclosure`, `/privacy`, `/terms`, trust and policy pages
 - `/sitemap.xml`, `/robots.txt`, generated automatically from `src/data`
 
 ## Notes on the "AI" features

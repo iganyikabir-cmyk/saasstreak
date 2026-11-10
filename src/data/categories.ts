@@ -9,9 +9,8 @@ export const categories: Category[] = [
     description:
       "Manage leads, deals, and customer relationships in one place. Compare the top CRM platforms for sales teams of every size.",
     seoDescription:
-      "Compare the best CRM software of 2026. Read verified reviews, pricing, and features for top CRM platforms like HubSpot, Salesforce, and Pipedrive.",
+      "Compare the best CRM software of 2026. Read independent reviews, pricing, and features for top CRM platforms like HubSpot, Salesforce, and Pipedrive.",
     icon: "users",
-    productCount: 128,
   },
   {
     id: "cat-marketing",
@@ -23,7 +22,6 @@ export const categories: Category[] = [
     seoDescription:
       "Find the best marketing software for email, automation, and campaign management. Compare pricing and features from real user reviews.",
     icon: "megaphone",
-    productCount: 96,
   },
   {
     id: "cat-project-management",
@@ -33,9 +31,8 @@ export const categories: Category[] = [
     description:
       "Plan, track, and deliver work on time with the leading project and task management platforms.",
     seoDescription:
-      "Compare the best project management software including Notion, ClickUp, and Asana. Verified reviews, pricing, and feature comparisons.",
+      "Compare the best project management software including Notion, ClickUp, and Asana. Independent reviews, pricing, and feature comparisons.",
     icon: "kanban-square",
-    productCount: 142,
   },
   {
     id: "cat-accounting",
@@ -47,7 +44,6 @@ export const categories: Category[] = [
     seoDescription:
       "Discover top-rated accounting software for small businesses. Compare pricing, features, and reviews before you buy.",
     icon: "calculator",
-    productCount: 74,
   },
   {
     id: "cat-customer-support",
@@ -59,7 +55,6 @@ export const categories: Category[] = [
     seoDescription:
       "Compare the best customer support and helpdesk software like Zendesk and Freshdesk. Real reviews, pricing, and feature breakdowns.",
     icon: "headset",
-    productCount: 61,
   },
   {
     id: "cat-hr",
@@ -71,7 +66,6 @@ export const categories: Category[] = [
     seoDescription:
       "Find the best HR software for payroll, hiring, and people management. Compare top-rated platforms by price and feature set.",
     icon: "briefcase",
-    productCount: 58,
   },
   {
     id: "cat-ai-tools",
@@ -83,7 +77,6 @@ export const categories: Category[] = [
     seoDescription:
       "Explore the best AI tools of 2026 for writing, coding, design, and productivity. Compare features, pricing, and real user ratings.",
     icon: "sparkles",
-    productCount: 210,
   },
   {
     id: "cat-analytics",
@@ -95,7 +88,6 @@ export const categories: Category[] = [
     seoDescription:
       "Compare the best analytics software for product and web analytics. Reviews, pricing, and feature comparisons in one place.",
     icon: "bar-chart-3",
-    productCount: 67,
   },
   {
     id: "cat-construction",
@@ -105,9 +97,8 @@ export const categories: Category[] = [
     description:
       "Project estimating, scheduling, and field management tools built for construction teams.",
     seoDescription:
-      "Discover the best construction management software. Compare estimating, scheduling, and field tools with verified reviews.",
+      "Discover the best construction management software. Compare estimating, scheduling, and field tools with independent reviews.",
     icon: "hard-hat",
-    productCount: 39,
   },
   {
     id: "cat-design",
@@ -119,7 +110,6 @@ export const categories: Category[] = [
     seoDescription:
       "Compare the best design software for UI/UX and graphic design. Read reviews and pricing for top creative tools.",
     icon: "palette",
-    productCount: 88,
   },
   {
     id: "cat-ecommerce",
@@ -131,7 +121,6 @@ export const categories: Category[] = [
     seoDescription:
       "Find the best e-commerce software to launch and grow your online store. Compare platforms, pricing, and real reviews.",
     icon: "shopping-cart",
-    productCount: 102,
   },
 ];
 

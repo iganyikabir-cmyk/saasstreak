@@ -47,7 +47,7 @@ export const software: Software[] = [
       { url: "gradient:from-cyan-400 to-teal-300", alt: "FreshBooks client portal" },
     ],
     alternativeIds: ["sw-quickbooks"],
-    ratings: { overall: 4.5, easeOfUse: 4.7, features: 4.1, customerSupport: 4.4, valueForMoney: 4.2, reviewCount: 9840 },
+    ratings: { overall: 4.5, easeOfUse: 4.7, features: 4.1, customerSupport: 4.4, valueForMoney: 4.2 },
     faqs: [
       { question: "Is FreshBooks good for freelancers?", answer: "Yes, it's one of the most popular accounting tools for freelancers and solo consultants specifically because invoicing and time tracking are built around single-person billing workflows." },
       { question: "FreshBooks vs QuickBooks, which should I pick?", answer: "FreshBooks wins on simplicity and invoicing for service-based freelancers and small agencies; QuickBooks wins on accounting depth, inventory, and payroll for businesses that have outgrown simple invoicing." },
@@ -106,7 +106,7 @@ export const software: Software[] = [
       { url: "gradient:from-orange-300 to-yellow-300", alt: "HubSpot marketing workflow builder" },
     ],
     alternativeIds: ["sw-salesforce", "sw-zendesk"],
-    ratings: { overall: 4.5, easeOfUse: 4.6, features: 4.4, customerSupport: 4.3, valueForMoney: 4.0, reviewCount: 2847 },
+    ratings: { overall: 4.5, easeOfUse: 4.6, features: 4.4, customerSupport: 4.3, valueForMoney: 4.0 },
     faqs: [
       { question: "Is HubSpot really free?", answer: "Yes, the core CRM, contact management, and basic email tools are free for unlimited users indefinitely. Paid Hubs add automation, reporting, and advanced features." },
       { question: "Does HubSpot work for small businesses?", answer: "Yes. Many small teams run entirely on the free CRM plus a single Starter Hub before upgrading as their contact list and automation needs grow." },
@@ -164,7 +164,7 @@ export const software: Software[] = [
       { url: "gradient:from-sky-300 to-cyan-300", alt: "Salesforce Einstein forecasting" },
     ],
     alternativeIds: ["sw-hubspot"],
-    ratings: { overall: 4.3, easeOfUse: 3.8, features: 4.7, customerSupport: 4.0, valueForMoney: 3.7, reviewCount: 3921 },
+    ratings: { overall: 4.3, easeOfUse: 3.8, features: 4.7, customerSupport: 4.0, valueForMoney: 3.7 },
     faqs: [
       { question: "Is Salesforce hard to learn?", answer: "The admin side has a real learning curve, most organizations either train a dedicated admin or hire an implementation partner. End users adapt faster than admins." },
       { question: "What's the real cost of Salesforce?", answer: "List price per seat is only part of it, factor in implementation, integrations, and ongoing admin time. Total cost of ownership is typically higher than the sticker price suggests." },
@@ -222,7 +222,7 @@ export const software: Software[] = [
       { url: "gradient:from-gray-500 to-slate-700", alt: "Notion AI writing assistant" },
     ],
     alternativeIds: ["sw-clickup"],
-    ratings: { overall: 4.7, easeOfUse: 4.6, features: 4.3, customerSupport: 4.1, valueForMoney: 4.6, reviewCount: 5103 },
+    ratings: { overall: 4.7, easeOfUse: 4.6, features: 4.3, customerSupport: 4.1, valueForMoney: 4.6 },
     faqs: [
       { question: "Is Notion good for project management?", answer: "For lightweight to mid-complexity projects, yes. Teams needing native dependencies, resource management, or heavy Gantt workflows often prefer ClickUp or Asana." },
       { question: "Can Notion replace Confluence and Jira?", answer: "It can replace Confluence-style docs and wikis well. Replacing Jira depends on how deep your engineering team's workflow needs go, Notion handles simple sprints fine, complex ones less so." },
@@ -280,7 +280,7 @@ export const software: Software[] = [
       { url: "gradient:from-indigo-500 to-violet-400", alt: "ClickUp goals dashboard" },
     ],
     alternativeIds: ["sw-notion"],
-    ratings: { overall: 4.4, easeOfUse: 4.0, features: 4.8, customerSupport: 4.2, valueForMoney: 4.5, reviewCount: 4218 },
+    ratings: { overall: 4.4, easeOfUse: 4.0, features: 4.8, customerSupport: 4.2, valueForMoney: 4.5 },
     faqs: [
       { question: "Is ClickUp free for unlimited users?", answer: "The Free Forever plan supports unlimited members with core task management, though storage and some advanced features are capped." },
       { question: "Is ClickUp overkill for small teams?", answer: "It can be, small teams sometimes find Notion or Trello faster to set up. ClickUp pays off once workflows get complex enough to need its automation and view options." },
@@ -338,7 +338,7 @@ export const software: Software[] = [
       { url: "gradient:from-green-500 to-emerald-400", alt: "Zendesk Explore analytics dashboard" },
     ],
     alternativeIds: ["sw-freshdesk"],
-    ratings: { overall: 4.3, easeOfUse: 4.1, features: 4.5, customerSupport: 4.2, valueForMoney: 3.9, reviewCount: 3654 },
+    ratings: { overall: 4.3, easeOfUse: 4.1, features: 4.5, customerSupport: 4.2, valueForMoney: 3.9 },
     faqs: [
       { question: "Is Zendesk good for small businesses?", answer: "It can work, but the per-agent pricing and feature depth are really built for mid-market and enterprise support teams, smaller teams often start with Freshdesk instead." },
       { question: "Does Zendesk include live chat?", answer: "Yes, live chat and messaging are included in the Suite plans alongside email and voice ticketing." },
@@ -396,7 +396,7 @@ export const software: Software[] = [
       { url: "gradient:from-lime-400 to-yellow-300", alt: "Freshdesk Arcade gamification" },
     ],
     alternativeIds: ["sw-zendesk"],
-    ratings: { overall: 4.4, easeOfUse: 4.5, features: 4.2, customerSupport: 4.3, valueForMoney: 4.4, reviewCount: 2967 },
+    ratings: { overall: 4.4, easeOfUse: 4.5, features: 4.2, customerSupport: 4.3, valueForMoney: 4.4 },
     faqs: [
       { question: "Is Freshdesk really free?", answer: "Yes, for up to 2 agents with core ticketing features. It's a solid starting point before upgrading as your team grows." },
       { question: "Freshdesk vs Zendesk, which is cheaper?", answer: "Freshdesk is generally cheaper at comparable tiers and has a more usable free plan, though Zendesk offers deeper enterprise reporting and workforce management." },
@@ -454,7 +454,7 @@ export const software: Software[] = [
       { url: "gradient:from-blue-400 to-indigo-300", alt: "QuickBooks financial reports" },
     ],
     alternativeIds: ["sw-freshbooks"],
-    ratings: { overall: 4.2, easeOfUse: 4.0, features: 4.4, customerSupport: 3.7, valueForMoney: 3.8, reviewCount: 6210 },
+    ratings: { overall: 4.2, easeOfUse: 4.0, features: 4.4, customerSupport: 3.7, valueForMoney: 3.8 },
     faqs: [
       { question: "Is QuickBooks Online good for freelancers?", answer: "Intuit sells a separate, cheaper QuickBooks Solopreneur product for freelancers, QuickBooks Online Simple Start is better suited to small businesses with basic bookkeeping needs." },
       { question: "Does QuickBooks Online include payroll?", answer: "No, payroll is a separate paid add-on (QuickBooks Payroll), though it integrates tightly with the core accounting product." },
@@ -512,7 +512,7 @@ export const software: Software[] = [
       { url: "gradient:from-rose-400 to-red-300", alt: "Gusto employee onboarding checklist" },
     ],
     alternativeIds: [],
-    ratings: { overall: 4.6, easeOfUse: 4.7, features: 4.2, customerSupport: 4.5, valueForMoney: 4.3, reviewCount: 1876 },
+    ratings: { overall: 4.6, easeOfUse: 4.7, features: 4.2, customerSupport: 4.5, valueForMoney: 4.3 },
     faqs: [
       { question: "Does Gusto file payroll taxes automatically?", answer: "Yes, Gusto automatically calculates, files, and pays federal, state, and local payroll taxes on your behalf." },
       { question: "Can Gusto pay contractors and employees together?", answer: "Yes, you can run payroll for W-2 employees and 1099 contractors in the same platform, including automatic 1099 filing." },
@@ -570,7 +570,7 @@ export const software: Software[] = [
       { url: "gradient:from-pink-500 to-fuchsia-400", alt: "Figma Dev Mode inspection panel" },
     ],
     alternativeIds: [],
-    ratings: { overall: 4.8, easeOfUse: 4.6, features: 4.7, customerSupport: 4.2, valueForMoney: 4.6, reviewCount: 4589 },
+    ratings: { overall: 4.8, easeOfUse: 4.6, features: 4.7, customerSupport: 4.2, valueForMoney: 4.6 },
     faqs: [
       { question: "Is Figma free for individuals?", answer: "Yes, the Starter plan is free with up to 3 files and unlimited collaborators, which covers most solo and hobby use cases." },
       { question: "Does Figma work offline?", answer: "Figma has limited offline support, a desktop app can cache recently opened files, but full multiplayer editing requires an internet connection." },
@@ -628,7 +628,7 @@ export const software: Software[] = [
       { url: "gradient:from-green-400 to-lime-300", alt: "Shopify order management view" },
     ],
     alternativeIds: [],
-    ratings: { overall: 4.5, easeOfUse: 4.4, features: 4.5, customerSupport: 4.0, valueForMoney: 4.0, reviewCount: 7342 },
+    ratings: { overall: 4.5, easeOfUse: 4.4, features: 4.5, customerSupport: 4.0, valueForMoney: 4.0 },
     faqs: [
       { question: "Does Shopify charge transaction fees?", answer: "Yes, unless you use Shopify Payments as your payment processor, using a third-party processor adds an additional fee on top of their rates." },
       { question: "Is Shopify good for beginners?", answer: "Yes, it's widely considered one of the easiest ways to launch an online store without technical experience, thanks to hosted infrastructure and templated themes." },

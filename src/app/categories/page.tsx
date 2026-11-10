@@ -20,7 +20,7 @@ export default function CategoriesPage() {
         Software Categories
       </h1>
       <p className="mt-2 max-w-2xl text-foreground-muted">
-        Browse verified reviews and comparisons across every major software
+        Browse independent reviews and comparisons across every major software
         category, from CRM to AI tools.
       </p>
 

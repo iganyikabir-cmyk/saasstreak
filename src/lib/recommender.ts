@@ -77,7 +77,7 @@ export function recommend(input: RecommenderInput): RecommendationResult[] {
 
     if (s.trending) {
       score += 4;
-      reasons.push("currently trending among SaaStreak users");
+      reasons.push("a widely used option");
     }
 
     const reasonText =

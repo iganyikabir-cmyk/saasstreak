@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "Discover the Best Software for Your Business",
   url: "https://saastreak.com",
   description:
-    "SaaStreak is a software review and comparison platform helping businesses find, compare, and choose the right SaaS tools with verified reviews, pricing breakdowns, and AI-powered recommendations.",
+    "SaaStreak is a software review and comparison platform helping businesses find, compare, and choose the right SaaS tools with independent reviews, pricing breakdowns, and AI-powered recommendations.",
 };
 
 export function buildMetadata({
@@ -58,7 +58,6 @@ export function softwareSchema(sw: {
   name: string;
   overview: string;
   website: string;
-  ratings: { overall: number; reviewCount: number };
   pricing: { price: string }[];
 }) {
   return {
@@ -68,13 +67,6 @@ export function softwareSchema(sw: {
     description: sw.overview,
     applicationCategory: "BusinessApplication",
     url: sw.website,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: sw.ratings.overall,
-      reviewCount: sw.ratings.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
     offers: {
       "@type": "Offer",
       price: sw.pricing[0]?.price?.replace(/[^0-9.]/g, "") || "0",

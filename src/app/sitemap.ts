@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ai-recommender`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/about`, changeFrequency: "monthly", priority: 0.4 },
     { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${base}/methodology`, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${base}/affiliate-disclosure`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/privacy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/terms`, changeFrequency: "yearly", priority: 0.3 },
   ];

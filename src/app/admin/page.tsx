@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 
@@ -8,6 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function AdminPage() {
+  // The dashboard is a local prototype with no authentication, so it is only
+  // available when explicitly enabled (NEXT_PUBLIC_ENABLE_ADMIN=true in .env.local).
+  if (process.env.NEXT_PUBLIC_ENABLE_ADMIN !== "true") notFound();
+
   return (
     <Container className="py-10">
       <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">

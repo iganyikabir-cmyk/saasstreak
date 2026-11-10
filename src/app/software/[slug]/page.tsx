@@ -88,7 +88,7 @@ export default async function SoftwarePage({
               <p className="mt-1 text-foreground-muted">{sw.tagline}</p>
               <div className="mt-2 flex flex-wrap items-center gap-3">
                 <RatingStars rating={sw.ratings.overall} />
-                <span className="text-sm text-foreground-muted">({sw.ratings.reviewCount.toLocaleString()} reviews)</span>
+                <span className="text-sm text-foreground-muted">SaaStreak score</span>
                 <div className="flex gap-1.5">
                   {swCategories.map((c) => (
                     <Link
@@ -108,18 +108,20 @@ export default async function SoftwarePage({
             <a
               href={sw.website}
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer nofollow sponsored"
               className="flex h-11 items-center justify-center gap-1.5 rounded-xl brand-gradient-bg text-sm font-medium text-white shadow-sm transition hover:opacity-90"
             >
               Visit Website
               <ExternalLink size={14} />
             </a>
-            <a
-              href="#reviews"
-              className="flex h-11 items-center justify-center rounded-xl border border-border text-sm font-medium text-foreground transition hover:border-brand-blue hover:text-brand-blue"
-            >
-              Read Reviews
-            </a>
+            {swReviews.length > 0 && (
+              <a
+                href="#reviews"
+                className="flex h-11 items-center justify-center rounded-xl border border-border text-sm font-medium text-foreground transition hover:border-brand-blue hover:text-brand-blue"
+              >
+                Read Reviews
+              </a>
+            )}
           </div>
         </div>
 
@@ -163,26 +165,6 @@ export default async function SoftwarePage({
               </div>
             </section>
 
-            {/* Screenshots */}
-            <section>
-              <h2 className="text-xl font-semibold text-foreground">Screenshots</h2>
-              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
-                {sw.screenshots.map((shot) => {
-                  const gradient = shot.url.replace("gradient:", "");
-                  return (
-                    <div
-                      key={shot.alt}
-                      className={`flex aspect-video items-end rounded-xl bg-gradient-to-br ${gradient} p-3`}
-                    >
-                      <span className="rounded-md bg-black/30 px-2 py-1 text-[11px] font-medium text-white backdrop-blur-sm">
-                        {shot.alt}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-
             {/* Pricing */}
             <section>
               <h2 className="text-xl font-semibold text-foreground">Pricing</h2>
@@ -192,6 +174,10 @@ export default async function SoftwarePage({
               <div className="mt-4">
                 <PricingTable plans={sw.pricing} />
               </div>
+              <p className="mt-3 text-xs text-foreground-muted">
+                Vendors change prices and plans often. Always confirm current pricing on the{" "}
+                {sw.name} website before you buy.
+              </p>
             </section>
 
             {/* Pros & Cons */}
@@ -242,13 +228,16 @@ export default async function SoftwarePage({
             {/* Reviews */}
             <section id="reviews">
               <h2 className="text-xl font-semibold text-foreground">
-                User Reviews ({swReviews.length})
+                {swReviews.length > 0 ? `User Reviews (${swReviews.length})` : "User Reviews"}
               </h2>
               <div className="mt-4 flex flex-col gap-4">
                 {swReviews.length > 0 ? (
                   swReviews.map((review) => <ReviewCard key={review.id} review={review} />)
                 ) : (
-                  <p className="text-sm text-foreground-muted">No reviews yet, be the first to review {sw.name}.</p>
+                  <p className="text-sm text-foreground-muted">
+                    SaaStreak does not accept user reviews yet. The score on this page is our own
+                    editorial assessment. See <Link href="/methodology" className="text-brand-blue hover:underline">how we rate software</Link>.
+                  </p>
                 )}
               </div>
             </section>
@@ -265,12 +254,12 @@ export default async function SoftwarePage({
           {/* Sidebar */}
           <aside className="flex flex-col gap-6">
             <div className="rounded-2xl border border-border bg-surface p-5">
-              <h3 className="text-sm font-semibold text-foreground">Rating Breakdown</h3>
+              <h3 className="text-sm font-semibold text-foreground">SaaStreak Score</h3>
               <div className="mt-4 flex items-center gap-3">
                 <span className="text-3xl font-bold text-foreground">{sw.ratings.overall.toFixed(1)}</span>
                 <div>
                   <RatingStars rating={sw.ratings.overall} showValue={false} />
-                  <p className="text-xs text-foreground-muted">{sw.ratings.reviewCount.toLocaleString()} reviews</p>
+                  <p className="text-xs text-foreground-muted">Editorial score out of 5</p>
                 </div>
               </div>
               <div className="mt-4 flex flex-col gap-2.5">
@@ -294,17 +283,23 @@ export default async function SoftwarePage({
             <div className="rounded-2xl border border-border bg-surface p-5">
               <h3 className="text-sm font-semibold text-foreground">Ready to try {sw.name}?</h3>
               <p className="mt-1.5 text-sm text-foreground-muted">
-                Starting at {sw.startingPrice}. No credit card details shared with SaaStreak.
+                Starting at {sw.startingPrice}. Check the vendor site for current pricing.
               </p>
               <a
                 href={sw.website}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer nofollow sponsored"
                 className="mt-4 flex h-11 items-center justify-center gap-1.5 rounded-xl brand-gradient-bg text-sm font-medium text-white shadow-sm transition hover:opacity-90"
               >
                 Visit Website
                 <ExternalLink size={14} />
               </a>
+              <p className="mt-3 text-xs text-foreground-muted">
+                SaaStreak may earn a commission if you sign up through links on this site.{" "}
+                <Link href="/affiliate-disclosure" className="text-brand-blue hover:underline">
+                  Affiliate disclosure
+                </Link>
+              </p>
             </div>
 
             {relatedComparisons.length > 0 && (

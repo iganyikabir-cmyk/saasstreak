@@ -156,7 +156,7 @@ function CategoriesTable() {
             <tr key={c.id} className={i % 2 === 0 ? "bg-surface" : "bg-surface-muted/40"}>
               <td className="px-4 py-3 font-medium text-foreground">{c.name}</td>
               <td className="px-4 py-3 text-foreground-muted">/{c.slug}</td>
-              <td className="px-4 py-3 text-foreground-muted">{c.productCount}</td>
+              <td className="px-4 py-3 text-foreground-muted">{software.filter((s) => s.categorySlugs.includes(c.slug)).length}</td>
             </tr>
           ))}
         </tbody>

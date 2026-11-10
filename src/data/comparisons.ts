@@ -7,7 +7,7 @@ export const comparisons: Comparison[] = [
     softwareAId: "sw-hubspot",
     softwareBId: "sw-salesforce",
     intro:
-      "HubSpot and Salesforce are the two most searched CRM platforms, but they're built for different buyers. HubSpot leans into ease of use and an all-in-one Hub model with a genuinely free CRM; Salesforce leans into near-limitless customization for complex, high-volume sales organizations. Here's how they actually compare.",
+      "HubSpot and Salesforce are two of the best-known CRM platforms, but they're built for different buyers. HubSpot leans into ease of use and an all-in-one Hub model with a genuinely free CRM; Salesforce leans into near-limitless customization for complex, high-volume sales organizations. Here's how they actually compare.",
     featureRows: [
       { label: "Free plan", aValue: "Yes, unlimited users", bValue: "No (30-day trial only)" },
       { label: "Custom objects", aValue: "Limited (Enterprise tier)", bValue: "Unlimited, fully custom" },

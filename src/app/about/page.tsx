@@ -7,41 +7,41 @@ import {
   Star,
   Scale,
   BookOpen,
-  Ban,
   ArrowRight,
 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
+import { blogPosts, categories, comparisons, software } from "@/lib/queries";
 
 export const metadata: Metadata = buildMetadata({
   title: "About SaaStreak",
   description:
-    "SaaStreak helps businesses discover, compare, and choose the right software through verified reviews and AI-powered recommendations.",
+    "SaaStreak helps freelancers, consultants, and small businesses compare software with independent reviews, pricing breakdowns, and buying guides.",
   path: "/about",
 });
 
-const stats = [
-  { label: "Software reviewed", value: "1,200+" },
-  { label: "Verified user reviews", value: "48,000+" },
-  { label: "Categories covered", value: "60+" },
-  { label: "Monthly buyers helped", value: "310,000+" },
-];
-
 const offerings = [
-  { icon: Star, title: "Verified Reviews", desc: "Real feedback from real buyers, checked before it's published, filterable by company size and use case." },
-  { icon: Scale, title: "Side-by-Side Comparisons", desc: "Head-to-head breakdowns of feature sets, pricing, ease of use, and best-fit use cases for the tools buyers research most." },
-  { icon: Sparkles, title: "AI-Powered Recommendations", desc: "Answer a few questions and get ranked software matches based on your budget, team size, and priorities." },
-  { icon: BookOpen, title: "Buying Guides & Blog", desc: "SEO-optimized guides, category roundups, and industry trend reporting to help you buy with confidence." },
+  { icon: Star, title: "Independent Reviews", desc: "Software profiles covering features, pricing, pros and cons, and who each product is best for." },
+  { icon: Scale, title: "Side-by-Side Comparisons", desc: "Head-to-head breakdowns of feature sets, pricing, ease of use, and best-fit use cases." },
+  { icon: Sparkles, title: "Guided Recommendations", desc: "Answer a few questions about your budget, team size, and priorities to get a shortlist." },
+  { icon: BookOpen, title: "Buying Guides", desc: "Plain-language guides to help you choose software without overspending." },
 ];
 
 const values = [
-  { icon: ShieldCheck, title: "Verified, not vetted for show", desc: "Every review goes through a verification step before publication, we don't let anyone pay to skip it." },
-  { icon: Ban, title: "No pay-to-rank listings", desc: "Rankings and ratings reflect real user feedback and product data, not advertising spend." },
-  { icon: Users2, title: "Built for real buyers", desc: "We filter and present reviews by company size so a 5-person startup isn't drowned out by enterprise feedback." },
+  { icon: ShieldCheck, title: "Editorial independence", desc: "Scores are our own assessment. Affiliate relationships never change a rating or a ranking." },
+  { icon: Star, title: "Clear about what a score is", desc: "Our scores are editorial, not an average of user ratings. We say so on every page." },
+  { icon: Users2, title: "Built for small teams", desc: "We focus on freelancers, consultants, small agencies, and small businesses." },
 ];
 
 export default function AboutPage() {
+  const stats = [
+    { label: "Software profiles", value: software.length },
+    { label: "Categories", value: categories.length },
+    { label: "Comparisons", value: comparisons.length },
+    { label: "Buying guides", value: blogPosts.length },
+  ];
+
   return (
     <Container className="max-w-4xl py-10">
       <Breadcrumbs items={[{ name: "About", href: "/about" }]} />
@@ -50,11 +50,11 @@ export default function AboutPage() {
         About SaaStreak
       </h1>
       <p className="mt-4 max-w-2xl text-foreground-muted">
-        SaaStreak is a software review and comparison platform built to help
-        businesses cut through marketing noise and make confident software
-        decisions. We combine verified user reviews, transparent pricing
-        breakdowns, and an AI-powered recommendation engine to match buyers
-        with the right tools faster.
+        SaaStreak is a software review and comparison site built to help
+        freelancers, consultants, small agencies, and small business owners cut
+        through marketing noise and choose software with confidence. We combine
+        independent reviews, transparent pricing breakdowns, and practical
+        buying guides.
       </p>
 
       {/* Mission */}
@@ -64,13 +64,13 @@ export default function AboutPage() {
         </h2>
         <p className="mt-2 text-foreground-muted">
           Buying business software shouldn&rsquo;t mean wading through sponsored
-          listicles and inflated star ratings. Our mission is to give every
-          business, from solo founders to enterprise teams, an honest,
-          data-backed way to find software that actually fits how they work.
+          listicles and inflated star ratings. Our mission is to give small
+          businesses an honest, plain-language way to find software that
+          actually fits how they work.
         </p>
       </div>
 
-      {/* Stats */}
+      {/* What is on the site today */}
       <div className="mt-10 grid grid-cols-2 gap-6 rounded-2xl border border-border bg-surface p-6 sm:grid-cols-4">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
@@ -79,6 +79,9 @@ export default function AboutPage() {
           </div>
         ))}
       </div>
+      <p className="mt-2 text-center text-xs text-foreground-muted">
+        What is on the site today. We are a new site and we add to this regularly.
+      </p>
 
       {/* What we do */}
       <section className="mt-14">
@@ -106,6 +109,17 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+        <p className="mt-4 text-sm text-foreground-muted">
+          Read the details in{" "}
+          <Link href="/methodology" className="text-brand-blue hover:underline">
+            how we rate software
+          </Link>{" "}
+          and our{" "}
+          <Link href="/affiliate-disclosure" className="text-brand-blue hover:underline">
+            affiliate disclosure
+          </Link>
+          .
+        </p>
       </section>
 
       {/* CTA */}
@@ -113,7 +127,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-base font-semibold text-foreground">Have a question or a product to suggest?</h2>
           <p className="mt-1 text-sm text-foreground-muted">
-            We&rsquo;d love to hear from you, reach out any time.
+            We&rsquo;d love to hear from you. Reach out any time.
           </p>
         </div>
         <Link

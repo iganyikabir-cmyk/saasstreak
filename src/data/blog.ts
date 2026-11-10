@@ -1,6 +1,6 @@
 import type { BlogPost } from "@/lib/types";
 
-export const blogPosts: BlogPost[] = [
+const rawBlogPosts: BlogPost[] = [
   {
     id: "post-best-crm-small-business",
     slug: "best-crm-software-for-small-businesses",
@@ -89,10 +89,15 @@ export const blogPosts: BlogPost[] = [
     coverGradient: "from-emerald-500 to-teal-500",
     relatedSoftwareIds: ["sw-hubspot", "sw-shopify"],
     content:
-      "A few shifts are reshaping how SaaS is priced, packaged, and bought this year.\n\n## AI features are becoming table stakes, not upsells\nMost major platforms have moved AI assistance into core tiers rather than gating it entirely behind premium add-ons, as competitive pressure pushes vendors to make AI a baseline expectation.\n\n## Platform consolidation continues\nBuyers are increasingly favoring fewer, broader platforms (like HubSpot's multi-Hub model) over best-of-breed point solutions, largely to reduce integration overhead.\n\n## Usage-based pricing is spreading beyond infrastructure\nMore categories, not just cloud infrastructure, are experimenting with usage-based components layered on top of seat pricing.\n\n## Buyers are demanding shorter contracts\nWith more switching options available, month-to-month and quarterly terms are becoming a stronger negotiating point for buyers, especially at the SMB tier.\n\n## Review authenticity is under more scrutiny\nAs AI-generated content grows, platforms with verified, company-size-filtered reviews are becoming more valuable to serious buyers than aggregate star ratings alone.",
+      "A few shifts are reshaping how SaaS is priced, packaged, and bought this year.\n\n## AI features are becoming table stakes, not upsells\nMost major platforms have moved AI assistance into core tiers rather than gating it entirely behind premium add-ons, as competitive pressure pushes vendors to make AI a baseline expectation.\n\n## Platform consolidation continues\nBuyers are increasingly favoring fewer, broader platforms (like HubSpot's multi-Hub model) over best-of-breed point solutions, largely to reduce integration overhead.\n\n## Usage-based pricing is spreading beyond infrastructure\nMore categories, not just cloud infrastructure, are experimenting with usage-based components layered on top of seat pricing.\n\n## Buyers are demanding shorter contracts\nWith more switching options available, month-to-month and quarterly terms are becoming a stronger negotiating point for buyers, especially at the SMB tier.\n\n## Review authenticity is under more scrutiny\nAs AI-generated content grows, platforms with transparent review practices are becoming more valuable to serious buyers than aggregate star ratings alone.",
   },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }
+
+export const blogPosts: BlogPost[] = rawBlogPosts.map((post) => ({
+  ...post,
+  readMinutes: Math.max(1, Math.round(post.content.trim().split(/\s+/).length / 200)),
+}));

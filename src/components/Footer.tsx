@@ -32,7 +32,8 @@ const footerColumns = [
     links: [
       { label: "About SaaStreak", href: "/about" },
       { label: "Contact Us", href: "/contact" },
-      { label: "Admin dashboard", href: "/admin" },
+      { label: "How We Rate Software", href: "/methodology" },
+      { label: "Affiliate Disclosure", href: "/affiliate-disclosure" },
     ],
   },
 ];
@@ -48,7 +49,7 @@ export function Footer() {
             </Link>
             <p className="mt-3 max-w-xs text-sm text-foreground-muted">
               Discover, compare, and choose the right software for your business,
-              backed by verified reviews and AI-powered recommendations.
+              backed by independent reviews and guided recommendations.
             </p>
           </div>
           {footerColumns.map((col) => (

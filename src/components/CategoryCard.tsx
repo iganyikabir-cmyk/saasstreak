@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Category } from "@/lib/types";
+import { getSoftwareByCategory } from "@/data/software";
 import { CategoryIcon } from "./CategoryIcon";
 
 export function CategoryCard({ category }: { category: Category }) {
+  const count = getSoftwareByCategory(category.slug).length;
   return (
     <Link
       href={`/category/${category.slug}`}
@@ -21,7 +23,7 @@ export function CategoryCard({ category }: { category: Category }) {
       <div className="mt-4">
         <h3 className="text-sm font-semibold text-foreground">{category.name}</h3>
         <p className="mt-1 text-xs text-foreground-muted">
-          {category.productCount}+ products
+          {count > 0 ? `${count} software ${count === 1 ? "profile" : "profiles"}` : "Coming soon"}
         </p>
       </div>
     </Link>

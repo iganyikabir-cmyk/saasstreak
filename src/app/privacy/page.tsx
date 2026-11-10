@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How SaaStreak collects, uses, and protects your information when you browse reviews, subscribe to our newsletter, or contact us.",
+    "How SaaStreak collects, uses, and protects your information when you browse the site or contact us.",
   path: "/privacy",
 });
 
@@ -18,8 +18,9 @@ const sections: LegalSectionData[] = [
         <ul className="list-disc space-y-1 pl-5">
           <li>
             <strong className="text-foreground">Information you give us:</strong> your email
-            address if you subscribe to our newsletter or contact us, and any name, role,
-            company size, and review text you submit when you post a software review.
+            address and the contents of your message if you contact us. SaaStreak does not
+            currently run a newsletter or accept user reviews. If we add either, we will
+            update this policy first.
           </li>
           <li>
             <strong className="text-foreground">Usage data:</strong> basic technical data such
@@ -41,8 +42,7 @@ const sections: LegalSectionData[] = [
       <>
         <p>We use the information we collect to:</p>
         <ul className="list-disc space-y-1 pl-5">
-          <li>Publish and moderate reviews and verify their authenticity.</li>
-          <li>Send the newsletter you signed up for, and respond to your messages.</li>
+          <li>Respond to your messages.</li>
           <li>Improve our content, search, comparisons, and recommendation features.</li>
           <li>Keep the site secure and prevent spam, fraud, and abuse.</li>
         </ul>
@@ -54,10 +54,9 @@ const sections: LegalSectionData[] = [
     heading: "Reviews and Public Content",
     body: (
       <p>
-        Reviews you submit, including the display name, role, and company size you provide,
-        may be shown publicly on SaaStreak. Please do not include confidential or sensitive
-        information in a review. To request removal or correction of a review you wrote,
-        contact us at the address below.
+        SaaStreak does not accept user reviews at the moment. If we open reviews in the
+        future, anything you submit, including the display name and role you provide, may be
+        shown publicly, and we will describe exactly how it is handled before you submit it.
       </p>
     ),
   },
@@ -79,7 +78,7 @@ const sections: LegalSectionData[] = [
         <ul className="list-disc space-y-1 pl-5">
           <li>
             With service providers that help us operate the site, such as hosting (Google
-            Firebase) and email delivery, who may only use it to provide their services to us.
+            Firebase) and email services, who may only use it to provide their services to us.
           </li>
           <li>When required by law, legal process, or to protect the rights and safety of others.</li>
           <li>
@@ -112,7 +111,6 @@ const sections: LegalSectionData[] = [
         <p>
           Depending on where you live, you may have the right to access, correct, delete, or
           export your personal information, or to object to or restrict certain processing.
-          You can unsubscribe from our newsletter at any time using the link in any email.
         </p>
         <p>To exercise any of these rights, contact us using the details below.</p>
       </>

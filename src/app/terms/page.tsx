@@ -51,7 +51,7 @@ const sections: LegalSectionData[] = [
     heading: "User Reviews and Submissions",
     body: (
       <>
-        <p>When you submit a review or other content, you agree that it:</p>
+        <p>If SaaStreak accepts reviews or other content from users, then by submitting it you agree that it:</p>
         <ul className="list-disc space-y-1 pl-5">
           <li>Reflects your genuine, first-hand experience with the product.</li>
           <li>

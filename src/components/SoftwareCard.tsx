@@ -22,13 +22,13 @@ export function SoftwareCard({ sw }: { sw: Software }) {
         {sw.spotlight ? (
           <span className="flex items-center gap-1 rounded-full brand-gradient-bg px-2 py-1 text-[11px] font-medium text-white">
             <Flame size={11} />
-            Most Talked About
+            Editor&rsquo;s Pick
           </span>
         ) : (
           sw.trending && (
             <span className="flex items-center gap-1 rounded-full bg-brand-purple/10 px-2 py-1 text-[11px] font-medium text-brand-purple">
               <TrendingUp size={11} />
-              Trending
+              Popular
             </span>
           )
         )}

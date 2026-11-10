@@ -24,7 +24,7 @@ export default function AIRecommenderPage() {
         </h1>
       </div>
       <p className="mt-2 max-w-2xl text-foreground-muted">
-        Tell us what you need, and we&rsquo;ll match you against verified
+        Tell us what you need, and we&rsquo;ll match you against
         ratings, pricing, and company-size fit across our software catalog.
       </p>
 

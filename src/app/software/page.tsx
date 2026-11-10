@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Browse All Software",
   description:
-    "Browse and search every software product on SaaStreak, with verified reviews, pricing, and ratings across every category.",
+    "Browse and search every software product on SaaStreak, with independent reviews, pricing, and scores across every category.",
   path: "/software",
 });
 
@@ -21,7 +21,7 @@ export default function SoftwareIndexPage() {
         Browse Software
       </h1>
       <p className="mt-2 max-w-2xl text-foreground-muted">
-        Search verified reviews, pricing, and ratings across our full software catalog.
+        Search reviews, pricing, and scores across our software catalog.
       </p>
 
       <div className="mt-6 max-w-xl">
