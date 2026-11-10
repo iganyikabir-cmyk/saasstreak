@@ -7,7 +7,7 @@ export const comparisons: Comparison[] = [
     softwareAId: "sw-hubspot",
     softwareBId: "sw-salesforce",
     intro:
-      "HubSpot and Salesforce are the two most searched CRM platforms — but they're built for different buyers. HubSpot leans into ease of use and an all-in-one Hub model with a genuinely free CRM; Salesforce leans into near-limitless customization for complex, high-volume sales organizations. Here's how they actually compare.",
+      "HubSpot and Salesforce are the two most searched CRM platforms, but they're built for different buyers. HubSpot leans into ease of use and an all-in-one Hub model with a genuinely free CRM; Salesforce leans into near-limitless customization for complex, high-volume sales organizations. Here's how they actually compare.",
     featureRows: [
       { label: "Free plan", aValue: "Yes, unlimited users", bValue: "No (30-day trial only)" },
       { label: "Custom objects", aValue: "Limited (Enterprise tier)", bValue: "Unlimited, fully custom" },
@@ -27,7 +27,7 @@ export const comparisons: Comparison[] = [
     bestUseCaseA: "SMBs and mid-market teams that want marketing, sales, and service unified with minimal admin overhead.",
     bestUseCaseB: "Large enterprises with complex, non-standard sales processes and dedicated Salesforce admin resources.",
     verdict:
-      "Choose HubSpot if you want to be productive fast and your process fits reasonably standard CRM/marketing workflows. Choose Salesforce if your sales process is genuinely complex enough to need custom objects, deep permissioning, or an extensive integration ecosystem — and you have the budget and admin resources to support it.",
+      "Choose HubSpot if you want to be productive fast and your process fits reasonably standard CRM/marketing workflows. Choose Salesforce if your sales process is genuinely complex enough to need custom objects, deep permissioning, or an extensive integration ecosystem, and you have the budget and admin resources to support it.",
     winnerId: null,
   },
   {
@@ -64,7 +64,7 @@ export const comparisons: Comparison[] = [
     softwareAId: "sw-zendesk",
     softwareBId: "sw-freshdesk",
     intro:
-      "Zendesk and Freshdesk both cover the core helpdesk workflow — ticketing, automation, and a self-service portal — but they target different budgets. Zendesk is built for scale and reporting depth; Freshdesk optimizes for fast setup and friendlier pricing at small-to-mid team sizes.",
+      "Zendesk and Freshdesk both cover the core helpdesk workflow, ticketing, automation, and a self-service portal, but they target different budgets. Zendesk is built for scale and reporting depth; Freshdesk optimizes for fast setup and friendlier pricing at small-to-mid team sizes.",
     featureRows: [
       { label: "Free plan", aValue: "No", bValue: "Yes (up to 2 agents)" },
       { label: "Advanced analytics", aValue: "Zendesk Explore (deep)", bValue: "Basic on lower tiers" },

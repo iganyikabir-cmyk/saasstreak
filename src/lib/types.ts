@@ -1,4 +1,4 @@
-// Core domain types — shaped to mirror the Supabase schema (see src/lib/supabase/schema.sql)
+// Core domain types, shaped to mirror the Supabase schema (see src/lib/supabase/schema.sql)
 // so the local data layer in src/data can be swapped for real Supabase queries later
 // without changing component props.
 

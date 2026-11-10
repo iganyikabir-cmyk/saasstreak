@@ -24,7 +24,7 @@ export function useLocalCollection<T>(key: string) {
     try {
       window.localStorage.setItem(key, JSON.stringify(items));
     } catch {
-      // storage unavailable — admin changes stay in-memory for this session
+      // storage unavailable, admin changes stay in-memory for this session
     }
   }, [key, items, hydrated]);
 

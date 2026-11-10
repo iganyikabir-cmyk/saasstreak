@@ -47,7 +47,7 @@ export function Footer() {
               <Logo size={30} showTagline />
             </Link>
             <p className="mt-3 max-w-xs text-sm text-foreground-muted">
-              Discover, compare, and choose the right software for your business —
+              Discover, compare, and choose the right software for your business,
               backed by verified reviews and AI-powered recommendations.
             </p>
           </div>

@@ -5,7 +5,7 @@ export const reviews: Review[] = [
     id: "rev-17", softwareId: "sw-freshbooks", authorName: "Priya Malhotra", authorRole: "Studio Founder", authorCompanySize: "1-10",
     rating: 5, title: "Everyone on our team recommends this now", date: "2026-09-10", verified: true, helpfulCount: 19,
     body: "It feels like every freelancer group chat I'm in has someone bringing up FreshBooks this quarter. We moved our whole studio over and the client portal alone has cut our payment delays in half.",
-    pros: "Word-of-mouth is real — it just works out of the box.", cons: "Wish the Lite plan allowed a few more clients before upgrading.",
+    pros: "Word-of-mouth is real, it just works out of the box.", cons: "Wish the Lite plan allowed a few more clients before upgrading.",
   },
   {
     id: "rev-1", softwareId: "sw-hubspot", authorName: "Priya Nair", authorRole: "Marketing Manager", authorCompanySize: "11-50",
@@ -22,7 +22,7 @@ export const reviews: Review[] = [
   {
     id: "rev-3", softwareId: "sw-salesforce", authorName: "Elena Torres", authorRole: "Sales Operations Director", authorCompanySize: "1000+",
     rating: 5, title: "Nothing else handles our complexity", date: "2026-06-20", verified: true, helpfulCount: 58,
-    body: "We evaluated three CRMs before staying with Salesforce — the custom object model is the only one that could represent our multi-entity sales process. It took a real implementation project, but it's paid off.",
+    body: "We evaluated three CRMs before staying with Salesforce, the custom object model is the only one that could represent our multi-entity sales process. It took a real implementation project, but it's paid off.",
     pros: "Unmatched customization, AppExchange ecosystem.", cons: "Needed a dedicated admin from day one.",
   },
   {
@@ -34,7 +34,7 @@ export const reviews: Review[] = [
   {
     id: "rev-5", softwareId: "sw-notion", authorName: "Sam Alvarez", authorRole: "Founder", authorCompanySize: "1-10",
     rating: 5, title: "Our entire startup runs on this", date: "2026-08-01", verified: true, helpfulCount: 63,
-    body: "Wiki, roadmap, CRM-lite, and meeting notes — all in Notion. The free tier got us through our first year and Plus has been more than enough since. Can't imagine going back to scattered docs.",
+    body: "Wiki, roadmap, CRM-lite, and meeting notes, all in Notion. The free tier got us through our first year and Plus has been more than enough since. Can't imagine going back to scattered docs.",
     pros: "Flexible, fast, great templates.", cons: "Large databases start to lag.",
   },
   {
@@ -70,25 +70,25 @@ export const reviews: Review[] = [
   {
     id: "rev-11", softwareId: "sw-quickbooks", authorName: "Robert Hayes", authorRole: "Small Business Owner", authorCompanySize: "1-10",
     rating: 4, title: "My accountant already knew it", date: "2026-04-30", verified: true, helpfulCount: 31,
-    body: "The biggest win was not having to train my bookkeeper on a new system — she already used QuickBooks with other clients. The bank sync alone saves me hours a month.",
+    body: "The biggest win was not having to train my bookkeeper on a new system, she already used QuickBooks with other clients. The bank sync alone saves me hours a month.",
     pros: "Familiar to accountants, reliable bank sync.", cons: "Payroll add-on fees stack up.",
   },
   {
     id: "rev-15", softwareId: "sw-freshbooks", authorName: "Danielle Ruiz", authorRole: "Freelance Consultant", authorCompanySize: "1-10",
     rating: 5, title: "Invoicing finally doesn't feel like a chore", date: "2026-08-03", verified: true, helpfulCount: 22,
-    body: "I switched from spreadsheets and a payment link generator to FreshBooks and got paid faster within the first month — clients love the portal, and the automatic reminders mean I've stopped chasing late invoices myself.",
+    body: "I switched from spreadsheets and a payment link generator to FreshBooks and got paid faster within the first month, clients love the portal, and the automatic reminders mean I've stopped chasing late invoices myself.",
     pros: "Effortless invoicing, great client portal, time tracking built in.", cons: "Client limit on the Lite plan forced an early upgrade.",
   },
   {
     id: "rev-16", softwareId: "sw-freshbooks", authorName: "Marcus Bell", authorRole: "Agency Owner", authorCompanySize: "11-50",
     rating: 4, title: "Great for a small agency, thin on inventory", date: "2026-05-22", verified: true, helpfulCount: 15,
-    body: "For a five-person creative agency billing by the project, FreshBooks nails the basics — time tracking rolls straight into invoices and project profitability reports keep us honest about scope creep. We'd need something heavier if we ever sold physical products.",
+    body: "For a five-person creative agency billing by the project, FreshBooks nails the basics, time tracking rolls straight into invoices and project profitability reports keep us honest about scope creep. We'd need something heavier if we ever sold physical products.",
     pros: "Simple setup, solid project profitability view.", cons: "No real inventory management, no built-in payroll.",
   },
   {
     id: "rev-12", softwareId: "sw-gusto", authorName: "Michelle Ortiz", authorRole: "Office Manager", authorCompanySize: "11-50",
     rating: 5, title: "Payroll finally feels simple", date: "2026-07-09", verified: true, helpfulCount: 27,
-    body: "I'm not an HR person by training, but Gusto walks me through everything — new hires, benefits enrollment, tax filings. Support has been genuinely helpful every time I've needed them.",
+    body: "I'm not an HR person by training, but Gusto walks me through everything, new hires, benefits enrollment, tax filings. Support has been genuinely helpful every time I've needed them.",
     pros: "Very approachable, great support.", cons: "Per-employee fees add up as we grow.",
   },
   {

@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Blog & Software Buying Guides",
   description:
-    "SEO-optimized guides, comparisons, and industry trends to help you choose the right business software — from CRM to AI tools.",
+    "SEO-optimized guides, comparisons, and industry trends to help you choose the right business software, from CRM to AI tools.",
   path: "/blog",
 });
 

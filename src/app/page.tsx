@@ -47,7 +47,7 @@ export default function HomePage() {
 
           <p className="max-w-xl text-base text-foreground-muted sm:text-lg">
             Compare verified reviews, pricing, and features across thousands
-            of business software products — powered by real users and AI.
+            of business software products, powered by real users and AI.
           </p>
 
           <div className="w-full max-w-xl">
@@ -77,7 +77,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Spotlight — most talked about software */}
+      {/* Spotlight, most talked about software */}
       {spotlight && (
         <section className="py-14 sm:py-16">
           <Container>
@@ -95,9 +95,9 @@ export default function HomePage() {
                   Most Talked About This Month
                 </span>
                 <h2 className="mt-3 text-xl font-semibold text-foreground sm:text-2xl">
-                  {spotlight.name}
+                  {spotlight.name},
                   <span className="ml-2 text-base font-normal text-foreground-muted">
-                    — {spotlight.tagline}
+                    {spotlight.tagline}
                   </span>
                 </h2>
                 <div className="mt-2 flex flex-wrap items-center gap-3">
@@ -234,7 +234,7 @@ export default function HomePage() {
         <Container>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
-              { icon: ShieldCheck, title: "Verified reviews", desc: "Every review is checked for authenticity — no fake ratings, ever." },
+              { icon: ShieldCheck, title: "Verified reviews", desc: "Every review is checked for authenticity, no fake ratings, ever." },
               { icon: Zap, title: "AI-powered matching", desc: "Answer a few questions and get software matched to your exact needs." },
               { icon: Users2, title: "Built for real buyers", desc: "Filter reviews by company size to see feedback from teams like yours." },
             ].map((item) => (

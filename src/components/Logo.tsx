@@ -1,4 +1,4 @@
-// SaaStreak brand mark — a ribbon "S" that resolves into an upward arrow,
+// SaaStreak brand mark, a ribbon "S" that resolves into an upward arrow,
 // recreated as SVG (from the supplied logo artwork) so it stays crisp at
 // any size and works as the header, footer, and favicon glyph.
 

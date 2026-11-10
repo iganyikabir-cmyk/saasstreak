@@ -1,4 +1,4 @@
-// Deterministic "AI comparison assistant" — generates a quick side-by-side
+// Deterministic "AI comparison assistant", generates a quick side-by-side
 // summary for any two products in the catalog, even ones without a curated
 // Comparison entry in src/data/comparisons.ts. Swap for a real LLM call later
 // by replacing the body of buildQuickComparison while keeping its signature.

@@ -17,7 +17,7 @@ export function NewsletterForm() {
     return (
       <div className="flex items-center gap-2 text-sm font-medium text-foreground">
         <CheckCircle2 size={18} className="text-emerald-500" />
-        You&rsquo;re subscribed — check your inbox for a confirmation email.
+        You&rsquo;re subscribed, check your inbox for a confirmation email.
       </div>
     );
   }

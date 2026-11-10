@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
+  title: `${siteConfig.name}, ${siteConfig.tagline}`,
   description: siteConfig.description,
   openGraph: {
     title: siteConfig.name,

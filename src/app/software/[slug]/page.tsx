@@ -248,7 +248,7 @@ export default async function SoftwarePage({
                 {swReviews.length > 0 ? (
                   swReviews.map((review) => <ReviewCard key={review.id} review={review} />)
                 ) : (
-                  <p className="text-sm text-foreground-muted">No reviews yet — be the first to review {sw.name}.</p>
+                  <p className="text-sm text-foreground-muted">No reviews yet, be the first to review {sw.name}.</p>
                 )}
               </div>
             </section>

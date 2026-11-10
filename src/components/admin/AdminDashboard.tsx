@@ -256,7 +256,7 @@ function ReviewsPanel({
               return (
                 <div key={r.id} className="flex items-start justify-between gap-3 rounded-xl border border-border p-3">
                   <div>
-                    <p className="text-sm font-medium text-foreground">{r.title} — {sw?.name}</p>
+                    <p className="text-sm font-medium text-foreground">{r.title}, {sw?.name}</p>
                     <p className="mt-1 text-xs text-foreground-muted">{r.body}</p>
                   </div>
                   <button

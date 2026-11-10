@@ -1,4 +1,4 @@
--- SaaStreak — Supabase database schema
+-- SaaStreak, Supabase database schema
 -- Run against a fresh Supabase Postgres project (SQL Editor or `supabase db push`).
 -- This prototype ships with local seed data in src/data/*.ts; wiring src/data/*
 -- to these tables (via src/lib/supabase/client.ts) is a drop-in swap once a
@@ -171,7 +171,7 @@ create index if not exists idx_blog_posts_status_published on public.blog_posts 
 create index if not exists idx_comparisons_slug on public.comparisons (slug);
 
 -- ---------------------------------------------------------------------------
--- Row Level Security — public read on published content, writes via editor/admin
+-- Row Level Security, public read on published content, writes via editor/admin
 -- ---------------------------------------------------------------------------
 alter table public.software enable row level security;
 alter table public.categories enable row level security;

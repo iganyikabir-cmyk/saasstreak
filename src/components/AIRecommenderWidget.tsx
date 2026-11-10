@@ -34,7 +34,7 @@ export function AIRecommenderWidget() {
     e.preventDefault();
     setLoading(true);
     setResults(null);
-    // Simulated reasoning delay for the AI-assistant feel — the scoring itself
+    // Simulated reasoning delay for the AI-assistant feel, the scoring itself
     // is a deterministic local heuristic (src/lib/recommender.ts) so this works
     // without an external API key.
     setTimeout(() => {

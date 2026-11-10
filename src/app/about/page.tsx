@@ -29,14 +29,14 @@ const stats = [
 ];
 
 const offerings = [
-  { icon: Star, title: "Verified Reviews", desc: "Real feedback from real buyers, checked before it's published — filterable by company size and use case." },
+  { icon: Star, title: "Verified Reviews", desc: "Real feedback from real buyers, checked before it's published, filterable by company size and use case." },
   { icon: Scale, title: "Side-by-Side Comparisons", desc: "Head-to-head breakdowns of feature sets, pricing, ease of use, and best-fit use cases for the tools buyers research most." },
   { icon: Sparkles, title: "AI-Powered Recommendations", desc: "Answer a few questions and get ranked software matches based on your budget, team size, and priorities." },
   { icon: BookOpen, title: "Buying Guides & Blog", desc: "SEO-optimized guides, category roundups, and industry trend reporting to help you buy with confidence." },
 ];
 
 const values = [
-  { icon: ShieldCheck, title: "Verified, not vetted for show", desc: "Every review goes through a verification step before publication — we don't let anyone pay to skip it." },
+  { icon: ShieldCheck, title: "Verified, not vetted for show", desc: "Every review goes through a verification step before publication, we don't let anyone pay to skip it." },
   { icon: Ban, title: "No pay-to-rank listings", desc: "Rankings and ratings reflect real user feedback and product data, not advertising spend." },
   { icon: Users2, title: "Built for real buyers", desc: "We filter and present reviews by company size so a 5-person startup isn't drowned out by enterprise feedback." },
 ];
@@ -65,7 +65,7 @@ export default function AboutPage() {
         <p className="mt-2 text-foreground-muted">
           Buying business software shouldn&rsquo;t mean wading through sponsored
           listicles and inflated star ratings. Our mission is to give every
-          business — from solo founders to enterprise teams — an honest,
+          business, from solo founders to enterprise teams, an honest,
           data-backed way to find software that actually fits how they work.
         </p>
       </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-base font-semibold text-foreground">Have a question or a product to suggest?</h2>
           <p className="mt-1 text-sm text-foreground-muted">
-            We&rsquo;d love to hear from you — reach out any time.
+            We&rsquo;d love to hear from you, reach out any time.
           </p>
         </div>
         <Link

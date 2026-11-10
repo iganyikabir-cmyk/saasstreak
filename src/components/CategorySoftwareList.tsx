@@ -62,7 +62,7 @@ export function CategorySoftwareList({
         </div>
       ) : (
         <div className="mt-10 rounded-2xl border border-dashed border-border p-10 text-center text-sm text-foreground-muted">
-          No listings match this filter yet. New {categoryName.toLowerCase()} reviews are added weekly —{" "}
+          No listings match this filter yet. New {categoryName.toLowerCase()} reviews are added weekly,{" "}
           <Link href="/categories" className="text-brand-blue hover:underline">
             browse other categories
           </Link>
