@@ -22,7 +22,7 @@ export async function generateMetadata({
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return buildMetadata({
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.seoDescription,
     path: `/blog/${post.slug}`,
   });

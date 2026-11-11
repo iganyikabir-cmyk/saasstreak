@@ -108,6 +108,7 @@ export interface BlogPost {
   id: string;
   slug: string;
   title: string;
+  seoTitle?: string;
   excerpt: string;
   seoDescription: string;
   content: string; // markdown-ish content, rendered as paragraphs/headings
