@@ -47,6 +47,37 @@ const sections: LegalSectionData[] = [
     ),
   },
   {
+    heading: "What the Scores Mean",
+    body: (
+      <>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong className="text-foreground">4.5 to 5.0:</strong> excellent for its target
+            audience, with few meaningful weaknesses.
+          </li>
+          <li>
+            <strong className="text-foreground">4.0 to 4.4:</strong> strong, with some
+            trade-offs worth knowing about.
+          </li>
+          <li>
+            <strong className="text-foreground">3.5 to 3.9:</strong> good in places, with
+            notable limitations.
+          </li>
+          <li>
+            <strong className="text-foreground">Below 3.5:</strong> significant weaknesses for
+            most small businesses.
+          </li>
+        </ul>
+        <p>
+          The overall score is our judgment across the four areas above. It is not a
+          calculated average. Scores are written with freelancers, consultants, and small
+          teams in mind, so a product built for large enterprises may score lower here than it
+          would for a large company.
+        </p>
+      </>
+    ),
+  },
+  {
     heading: "Where Our Information Comes From",
     body: (
       <p>

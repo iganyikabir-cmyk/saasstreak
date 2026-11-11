@@ -195,7 +195,7 @@ export default function HomePage() {
             description="See exactly how the top tools stack up on features, pricing, and ease of use."
             viewAllHref="/compare"
           />
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {comparisons.map((cmp) => {
               const a = getSoftwareById(cmp.softwareAId);
               const b = getSoftwareById(cmp.softwareBId);

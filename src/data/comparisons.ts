@@ -2,6 +2,36 @@ import type { Comparison } from "@/lib/types";
 
 export const comparisons: Comparison[] = [
   {
+    id: "cmp-freshbooks-quickbooks",
+    slug: "freshbooks-vs-quickbooks",
+    softwareAId: "sw-freshbooks",
+    softwareBId: "sw-quickbooks",
+    intro:
+      "FreshBooks and QuickBooks Online are two of the most common choices for small business accounting, but they are built around different priorities. FreshBooks puts invoicing and getting paid first, with a simpler day-to-day experience. QuickBooks Online covers more accounting ground, including inventory and payroll, and is the tool most accountants already know. Prices below are taken from our software profiles, so confirm current plans on each vendor's website before you buy.",
+    featureRows: [
+      { label: "Invoicing and online payments", aValue: "Core strength: branded invoices, payment links, automatic late-payment reminders", bValue: "Branded invoices and online payments with automatic reconciliation" },
+      { label: "Time tracking", aValue: "Built in, and billable hours convert straight into an invoice", bValue: "Included from the Essentials plan" },
+      { label: "Project profitability", aValue: "Time, expenses, and invoiced amounts per project", bValue: "Available on the Plus plan" },
+      { label: "Payroll", aValue: "Not built in, needs a third-party integration", bValue: "Separate paid add-on" },
+      { label: "Inventory and multi-entity", aValue: "Limited", bValue: "Inventory tracking on the Plus plan, multi-entity reporting is limited" },
+      { label: "Learning curve", aValue: "Gentler for people without an accounting background", bValue: "Familiar to most accountants, interface shows its age in places" },
+    ],
+    pricingRows: [
+      { label: "Entry price", aValue: "$19/mo (Lite, up to 5 billable clients)", bValue: "$35/mo (Simple Start, 1 user)" },
+      { label: "Mid-tier price", aValue: "$33/mo (Plus, up to 50 billable clients)", bValue: "$65/mo (Essentials, 3 users)" },
+      { label: "Top tier price", aValue: "$60/mo (Premium, unlimited billable clients)", bValue: "$99/mo (Plus, 5 users)" },
+      { label: "What limits each plan", aValue: "Number of billable clients", bValue: "Number of users" },
+      { label: "Payroll cost", aValue: "Not included", bValue: "Extra fee as an add-on" },
+    ],
+    easeOfUseA: 4.7,
+    easeOfUseB: 4.0,
+    bestUseCaseA: "Freelancers, consultants, and small agencies that bill by the project or the hour and want invoicing, time tracking, and getting paid to feel simple.",
+    bestUseCaseB: "Small businesses that need inventory, payroll, or deeper financial reporting, or that work with an accountant who already uses QuickBooks.",
+    verdict:
+      "Choose FreshBooks if you are a freelancer, consultant, or small agency and your priority is fast, simple invoicing and time tracking. Choose QuickBooks Online if you need inventory, payroll, or deeper reporting, or if your accountant already works in QuickBooks. FreshBooks limits plans by number of billable clients, so a growing client list can push you into a higher tier sooner than expected, while QuickBooks limits plans by number of users. Check the current pricing for both before deciding.",
+    winnerId: null,
+  },
+  {
     id: "cmp-hubspot-salesforce",
     slug: "hubspot-vs-salesforce",
     softwareAId: "sw-hubspot",

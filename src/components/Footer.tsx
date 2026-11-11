@@ -12,6 +12,7 @@ const footerColumns = [
   {
     title: "Compare",
     links: [
+      { label: "FreshBooks vs QuickBooks", href: "/compare/freshbooks-vs-quickbooks" },
       { label: "HubSpot vs Salesforce", href: "/compare/hubspot-vs-salesforce" },
       { label: "Notion vs ClickUp", href: "/compare/notion-vs-clickup" },
       { label: "Zendesk vs Freshdesk", href: "/compare/zendesk-vs-freshdesk" },
