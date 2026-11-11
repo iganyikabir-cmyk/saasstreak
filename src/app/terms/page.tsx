@@ -92,7 +92,11 @@ const sections: LegalSectionData[] = [
         responsible for their content, products, or practices, and any dealings you have with
         a vendor are solely between you and that vendor. Some links may be affiliate links,
         meaning SaaStreak may earn a commission if you purchase through them, at no extra
-        cost to you. Commercial relationships do not buy better ratings or rankings.
+        cost to you. Commercial relationships do not buy better ratings or rankings. See our{" "}
+        <Link href="/affiliate-disclosure" className="text-brand-blue hover:underline">
+          Affiliate Disclosure
+        </Link>{" "}
+        for details.
       </p>
     ),
   },
